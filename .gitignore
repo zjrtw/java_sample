@@ -1,0 +1,115 @@
+# =========================
+
+# Java build files
+
+# =========================
+
+*.class
+*.log
+*.ctxt
+
+# Maven
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================
+
+# Eclipse files
+
+# =========================
+
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+
+# Eclipse project files
+
+.project
+.classpath
+.settings/
+
+# Eclipse launch configs
+
+*.launch
+
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Logs
+
+# =========================
+
+logs/
+*.log
+
+# =========================
+
+# Package files
+
+# =========================
+
+*.jar
+*.war
+*.ear
+
+# =========================
+
+# IntelliJ (혹시 같이 사용할 경우)
+
+# =========================
+
+.idea/
+*.iml
+out/
+
+# =========================
+
+# VSCode (혹시 사용할 경우)
+
+# =========================
+
+.vscode/
+
+# =========================
+
+# Environment files
+
+# =========================
+
+.env
+.env.*
+
+# =========================
+
+# Test output
+
+# =========================
+
+test-output/
+coverage/
