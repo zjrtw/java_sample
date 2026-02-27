@@ -113,3 +113,6 @@ out/
 
 test-output/
 coverage/
+
+# 다음 항목 수기 추가 
+.gitignore 
