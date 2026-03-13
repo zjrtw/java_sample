@@ -1,30 +1,19 @@
 package thread;
 
-class MyThread extends Thread {
-
-    private String name;
-
-    public MyThread(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public void run() {
-        for(int i = 1; i <= 5; i++) {
-            System.out.println(name + " : " + i);
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {}
-        }
-    }
-}
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ThreadDemo {
     public static void main(String[] args) {
 
-        Thread t1 = new MyThread("스레드1");
-        Thread t2 = new MyThread("스레드2");
-        t1.start();
-        t2.start();
+//
+//    	ExecutorService pool = Executors.newFixedThreadPool(4);
+//
+//    	for(int i = 0; i < 10000; i++){
+//    	    pool.submit(() -> {
+//    	        System.out.println(Thread.currentThread().getName());
+//    	    });
+//    	}
+    	
     }
 }

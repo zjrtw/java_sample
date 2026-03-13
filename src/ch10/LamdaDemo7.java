@@ -33,7 +33,7 @@ public class LamdaDemo7 {
     	getCars(diesels, c -> System.out.println("모델 : %s, 연식 : %d".formatted(c.getModel(), c.getAge())));
     	
     	// 10년보다 오래된 자동차를 출력하되 모델, 연식, 주행거리만 나타나도록 출력하자.
-    	getCars(oldcars, c -> System.out.println("모델 : %s, 연식 : %d, 주행거리 : %d".formatted(c.getModel(), c.getAge(), c.getMilleage())));
+    	getCars(oldcars, c -> System.out.println("모델 : %s, 연식 : %d, 주행거리 : %d".formatted(c.getModel(), c.getAge(), c.getMileage())));
     	
     }
     public static List<Car> findCars(List<Car> cars, CarPredicate carPredicate){
@@ -63,45 +63,3 @@ interface CarConsumer {
 }
 
 
-class Car{
-	private String model;
-	private boolean gasoline;
-	private int age;
-	private int milleage;
-	
-	public Car(String model, boolean gasoline, int age, int milleage) {
-		super();
-		this.model = model;
-		this.gasoline = gasoline;
-		this.age = age;
-		this.milleage = milleage;
-	}
-
-	public String getModel() {
-		return model;
-	}
-
-	public boolean isGasoline() {
-		return gasoline;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public int getMilleage() {
-		return milleage;
-	}
-
-	@Override
-	public String toString() {
-		return "Car [getModel()=" + getModel() + ", isGasoline()=" + isGasoline() + ", getAge()=" + getAge()
-				+ ", getMilleage()=" + getMilleage() + "]";
-	}
-	
-	public static final List<Car> cars = Arrays.asList(
-			new Car("소나타", true, 18, 210_000), 
-			new Car("아반떼", true, 10, 100_000), 
-			new Car("산타페", false, 1, 10_000) 
-			);
-}

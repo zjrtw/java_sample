@@ -6,7 +6,7 @@ public class StringBuilderThreadTest {
 
     public static void main(String[] args) throws Exception {
     	Runnable task = () -> {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 builder.append("A");
             }
         };
